@@ -57,6 +57,10 @@ src="assets\Bark_06_ambientOcclusion.jpg"
 id="treetrunk-normal"
 src="assets\Bark_06_normal.jpg"
 >
+<img
+id="sky"
+src="assets\sky.jpg"
+>
 </a-assets>
 <a-plane
  material=
@@ -73,9 +77,19 @@ height="500"
 >
 </a-plane>
 <a-sky
-color="lightskyblue"
+src="#sky"
 >
 </a-sky>
+<a-asset-item
+id="chair"
+src="assets\chair.glb"
+>
+</a-asset-item>
+<a-asset-item
+id="lamp"
+src="assets\lamp.glb"
+>
+</a-asset-item>
 
 
 <a-mixin
@@ -125,7 +139,7 @@ position="2.875 1.5 -6"
 rotation="0 0 0"
 width="4.25"
 height="3"
-depth="0.1
+depth="0.1"
 >
 </a-box>
 <a-box
@@ -233,6 +247,19 @@ mixin="sphericaltreeleaves"
 position="8 2 -6"
 >
 </a-sphere>
+<a-entity
+gltf-model="#chair"
+position="-1.0 0 -10"
+rotation="0 45 0"
+scale="0.1 0.1 0.1"
+>
+</a-entity>
+<a-entity
+gltf-model="#lamp"
+position="1.0 0 -10"
+scale="0.225 0.225 0.225"
+>
+</a-entity>
 
 
 
